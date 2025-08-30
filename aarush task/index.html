@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amrit Arnav | Portfolio</title>
-  <!-- Fonts -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Orbitron:wght@700&display=swap" rel="stylesheet"/>
-  <!-- Styles -->
+  
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Theme toggle switch (futuristic style, floating physical button) -->
+ 
   <input type="checkbox" id="theme-toggle" hidden />
   <label for="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode"></label>
-  <!-- Header -->
+  
   <header>
     <h1 class="orbitron">Amrit Arnav</h1>
     <h2 class="subtitle">Computer Science Engineering Student</h2>
@@ -25,7 +25,7 @@
       </ul>
     </nav>
   </header>
-  <!-- About Section -->
+ 
   <section id="about" class="section-card">
     <h3>About Me</h3>
     <p>
@@ -35,7 +35,7 @@
       Currently, I’m exploring web development and competitive programming.
     </p>
   </section>
-  <!-- Projects Section -->
+  
   <section id="projects" class="section-card">
     <h3>Projects</h3>
     <div class="project">
@@ -54,7 +54,7 @@
       <a href="#" class="project-link">View Project</a>
     </div>
   </section>
-  <!-- Contact Section -->
+  
   <section id="contact" class="section-card">
     <h3>Contact Me</h3>
     <form action="#" method="post">
@@ -67,7 +67,7 @@
       <button type="submit">Send</button>
     </form>
   </section>
-  <!-- Footer -->
+ 
   <footer>
     <p>&copy; 2025 Amrit Arnav. All rights reserved.</p>
     <div class="socials">
@@ -75,10 +75,10 @@
       <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
     </div>
   </footer>
-  <!-- Theme Toggle JS -->
+ 
   <script>
     const toggle = document.getElementById('theme-toggle');
-    // Load theme preference
+    
     if (localStorage.getItem('theme') === 'light') {
       document.documentElement.setAttribute('data-theme', 'light');
       toggle.checked = false;
