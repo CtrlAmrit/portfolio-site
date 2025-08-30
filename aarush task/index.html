@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrit Arnav | Portfolio</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Orbitron:wght@700&display=swap" rel="stylesheet"/>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Theme toggle switch (futuristic style, floating physical button) -->
+  <input type="checkbox" id="theme-toggle" hidden />
+  <label for="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode"></label>
+  <!-- Header -->
+  <header>
+    <h1 class="orbitron">Amrit Arnav</h1>
+    <h2 class="subtitle">Computer Science Engineering Student</h2>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- About Section -->
+  <section id="about" class="section-card">
+    <h3>About Me</h3>
+    <p>
+      I am a computer science engineering student passionate about programming, 
+      data structures, and artificial intelligence research. I enjoy solving 
+      problems and building creative projects that sharpen my skills. 
+      Currently, I’m exploring web development and competitive programming.
+    </p>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="section-card">
+    <h3>Projects</h3>
+    <div class="project">
+      <h4>Student Result Analyzer</h4>
+      <p>A web app to visualize academic results, track progress, and provide insights into performance trends.</p>
+      <a href="#" class="project-link">View Project</a>
+    </div>
+    <div class="project">
+      <h4>AI Research Paper Dashboard</h4>
+      <p>An organized dashboard that highlights trending AI papers, summarizes key findings, and sorts by field and topic.</p>
+      <a href="#" class="project-link">View Project</a>
+    </div>
+    <div class="project">
+      <h4>C++ Quiz App</h4>
+      <p>A fast and interactive quiz application for beginners to practice C++ programming concepts.</p>
+      <a href="#" class="project-link">View Project</a>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="section-card">
+    <h3>Contact Me</h3>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Amrit Arnav. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://github.com/" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+  <!-- Theme Toggle JS -->
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    // Load theme preference
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      toggle.checked = false;
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      toggle.checked = true;
+    }
+    toggle.addEventListener('change', function() {
+      if (this.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
