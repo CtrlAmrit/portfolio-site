@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Orbitron:wght@700&display=swap');
 
-/* THEME VARIABLES */
 :root {
   --bg-main: #111216;
   --bg-header: #202640;
@@ -37,7 +36,7 @@
   --border: #c4caec;
 }
 
-/* Apply theme variables */
+
 body {
   margin: 0;
   padding: 0;
@@ -264,20 +263,20 @@ footer .socials a:hover {
   color: var(--accent-1);
 }
 
-/* Fade in animation for sections */
+
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(34px) scale(0.97);}
   to { opacity: 1; transform: translateY(0) scale(1);}
 }
 
-/* Responsive design */
+
 @media (max-width: 600px) {
   nav ul { flex-direction: column; gap: 18px;}
   #contact button { width: 100%; justify-self: stretch;}
   .theme-toggle-btn {top:18px;right:14px;scale:.84;}
 }
 
-/* PHYSICAL FUTURISTIC TOGGLE BUTTON */
+
 .theme-toggle-btn {
   position: fixed;
   top: 32px;
